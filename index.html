@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHITCHAT - Trang chủ</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicons.ico" type="image/x-icon">
+    <style>
+        .carousel {
+            margin-top: 10px; 
+            max-width: 95%; 
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        #logoCarousel .carousel-inner {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100%; 
+        }
+        #logoCarousel .carousel-inner img {
+            max-width: 100px; 
+            height: auto; 
+            margin: 10px; 
+        }
+        /* Nội dung */
+        .content {
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+       
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; 
+        }
+
+        .button-container a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 100px; 
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+            margin-left: 70px; 
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        /* Nội dung chínhd */
+        .main-content {            
+            padding-right: 20px;
+        }
+
+        /* Hoạt động đang diễn ra */
+        .activity-container {
+            margin-top: 50px;
+        }
+
+        .activity-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        .activity-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .activity-card img {
+            height: 200px; 
+            object-fit: cover; 
+            transition: transform 0.3s;
+        }
+        
+        .activity-card:hover img {
+            transform: translateY(-5px);
+        }
+        
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            opacity: 1;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0; 
+                transform: translateY(10px); 
+            }
+            to {
+                opacity: 1; 
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Đánh Giá */
+        .review-container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .review-card {
+            display: flex;
+            flex-direction: column; 
+            height: 100%; 
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .review-card img {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            margin-bottom: 15px;
+        }
+
+        .review-card img {
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div>
+                <a href="/index.html" class="trangchu">Trang Chủ</a>
+            </div>
+        
+            <nav>
+                <a href="/blog/timhieu.html" class="support-item">Tìm hiểu</a>
+                <a href="/blog/hotro.html" class="support-item">Hỗ trợ</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Tìm kiếm...">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="auth-links">
+            <a href="/auth/dangnhap.html">Đăng Nhập/Đăng Ký</a>
+        </div>
+    </header>
+
+    <!-- Slideshow -->
+    <div class="container-fluid">
+        <div id="logoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="/truong1.html">
+                        <img src="/img/Logo trường/Humg.png" class="d-block" alt="Logo Trường 1">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong2.html">            
+                        <img src="/img/Logo trường/AOF.png" class="d-block" alt="Logo Trường 2">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="/img/Logo trường/đại học hà nội.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/đại học khoa học xã hội và nhân văn.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/đại học luật hn.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/đại học mỹ thuât công nghiệp.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/đại học phenikaa.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/đại học y hn.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/DHQGHN.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/Logo_ĐH_Bách_Khoa_Hà_Nội-HUST-removebg-preview.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/Logo_ĐH_Công_Đoàn-TUU-removebg-preview.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/Logo_ĐH_Công_Nghệ_Đông_Á_-EAUT-removebg-preview.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/Logo_ĐH_Công_Nghệ-UET-removebg-preview.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/TMU.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/Logo_ĐH_Điện_Lực-EPU-removebg-preview.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/Logo_ĐH_Thủy_Lợi-removebg-preview.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/Logo_ĐH_Xây_Dựng_Hà_Nội_-_NUCE-removebg-preview.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/Logo_Học_Viện_Công_Nghệ_Bưu_Chính_Viễn_Thông_-_PTIT_Simple_-removebg-preview.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/truong3.html">
+                        <img src="img/Logo trường/Logo_Học_Viện_Nông_Nghiệp_Việt_Nam_-_VNUA-removebg-preview.png" class="d-block" alt="Logo Trường 3">
+                    </a>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#logoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Trở lại</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#logoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Tiếp theo</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="/auth/dangnhap.html">Tham gia ngay!</a>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="content">
+        <div class="main-content">
+            <h1>Chào mừng đến với CHITCHAT</h1>
+            <p style="color:#0C6478;" >Tại CHITCHAT, sứ mệnh của chúng tôi là xây dựng và duy trì một cộng đồng kết bạn trực tuyến sôi động và an toàn, nơi mọi người có thể kết nối, chia sẻ và học hỏi từ nhau. Chúng tôi cam kết cung cấp một nền tảng thân thiện, dễ sử dụng, giúp người dùng tìm kiếm bạn bè,
+                 mở rộng mối quan hệ và khám phá những cơ hội mới.
+                </p>
+    
+                <li><b style="color: #06D7A0;">Tạo ra một môi trường an toàn:</b> Đảm bảo rằng mọi người có thể giao lưu và kết nối mà không phải lo lắng về an ninh thông tin cá nhân.</li>
+                <li> <b style="color: #108AB1;">Khuyến khích sự tương tác tích cực:</b> Thúc đẩy những cuộc trò chuyện ý nghĩa và những kết nối lâu dài giữa các thành viên trong cộng đồng.</li>
+                <li> <b style="color: #FFD167;">Cung cấp thông tin hữu ích:</b> Chia sẻ các nguồn tài nguyên, bài viết và hoạt động giúp người dùng phát triển bản thân và mở rộng kiến thức.</li>
+                <li><b style="color: #F04770;">Hỗ trợ người dùng:</b> Luôn sẵn sàng lắng nghe và đáp ứng nhu cầu của cộng đồng, từ việc giải đáp thắc mắc đến cung cấp các giải pháp hỗ trợ.</li>
+            <p>Để biết thêm thông tin chi tiết, hãy tham khảo các liên kết bên dưới hoặc liên hệ với chúng tôi qua phần hỗ trợ.</p>
+           <p style="color:#BDD1C5;"><b>Hãy bắt đầu tham gia ngay!</b></p>
+          
+        </div>
+        
+    </div>
+
+    <div class="container activity-container">
+        <h2 class="text-center">Các Hoạt Động Đang Diễn Ra</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card activity-card mb-4">
+                    <img src="/img/hoithao.png" class="card-img-top" alt="Hội Thảo">
+                    <div class="card-body">
+                        <h5 class="card-title">Hội Thảo về Kỹ Năng Giao Tiếp</h5>
+                        <p class="card-text">Tham gia hội thảo trực tuyến để cải thiện kỹ năng giao tiếp và kết nối với bạn bè. Chuyên gia sẽ chia sẻ những mẹo hữu ích.</p>
+                        <a href="/blog/hoithao.html" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card activity-card mb-4">
+                    <img src="/img/tet.png" class="card-img-top" alt="Cuộc Thi Ảnh">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuộc Thi Ảnh Chào Mừng Tết Nguyên Đán</h5>
+                        <p class="card-text">Gửi ảnh của bạn về Tết Nguyên Đán và nhận cơ hội nhận giải thưởng hấp dẫn. Hãy cho chúng tôi thấy mùa hè của bạn!</p>
+                        <a href="/blog/cuocthianh.html" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card activity-card mb-4">
+                    <img src="/img/ketban.png" class="card-img-top" alt="Giao Lưu Kết Bạn">
+                    <div class="card-body">
+                        <h5 class="card-title">Giao Lưu Kết Bạn</h5>
+                        <p class="card-text">Tham gia chương trình giao lưu để gặp gỡ và làm quen với những người bạn mới.</p>
+                        <a href="/blog/giaoluuketban.html" class="btn btn-primary">Xem Chi Tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Đánh giá -->
+    <div class="container review-container">
+        <h2 class="text-center">Đánh Giá Của Mọi Người</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card review-card mb-4 text-center">
+                    <img src="/img/anhdaidien.jpg" class="card-img-top" alt="Người dùng 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Người Dùng 1</h5>
+                        <p class="card-text">"Tôi rất thích sử dụng ChITCHAT! Giao diện rất thân thiện và dễ sử dụng."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card review-card mb-4 text-center">
+                    <img src="/img/anhdaidien.jpg" class="card-img-top" alt="Người dùng 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Người Dùng 2</h5>
+                        <p class="card-text">"Một nền tảng tuyệt vời để kết nối với bạn bè và tìm kiếm thông tin."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card review-card mb-4 text-center">
+                    <img src="/img/anhdaidien.jpg" class="card-img-top" alt="Người dùng 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Người Dùng 3</h5>
+                        <p class="card-text">"Chất lượng dịch vụ tốt, tôi đã nhận được nhiều thông tin hữu ích."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card review-card mb-4 text-center">
+                    <img src="/img/anhdaidien.jpg" class="card-img-top" alt="Người dùng 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Người Dùng 4</h5>
+                        <p class="card-text">"Chất lượng tuyệt vời! Rất đáng để thử nghiệm."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; Bản quyền thuộc về hoanganhtu147@gmail.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

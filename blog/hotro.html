@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỗ Trợ - CHITCHAT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="/img/favicons.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(to right, #9489FF, #ABD5F0, #CDFDC8);
+        }
+
+        header {
+            background-color: #9489FF;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content {
+        display: flex;
+        align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .trangchu {
+            font-size: 18px; 
+            color: black;
+            margin: 0 10px; 
+            text-decoration: none;
+        }
+
+        .trangchu:hover {
+            color: #ddd;
+        }
+
+        .auth-links {
+            font-size: 18px;
+            color:black;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .auth-links:hover {
+            color: #ddd;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            color: black;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px; 
+        }
+
+        footer {
+            background-color: #CDFDC8;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            margin-top: auto;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            text-align: center;           
+            padding: 10px 30px;
+            background-color: #6f5bca;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            width: 200px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #5749a3;
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <a href="/index.html" class="trangchu">Trang Chủ</a>
+        </div>
+        <a href="/auth/dangnhap.html" class="auth-links">Đăng Nhập/Đăng Ký</a>
+    </header>
+
+    <div class="content">
+        <h2>Câu Hỏi Thường Gặp</h2>
+        <ul>
+            <li><strong>1. Làm thế nào để đăng ký tài khoản?</strong><br> Bạn có thể đăng ký tài khoản bằng cách nhấp vào nút "Đăng Nhâp/Đăng Ký" trên trang chính và làm theo hướng dẫn.</li>
+            <li><strong>2. Tôi quên mật khẩu, làm thế nào để khôi phục?</strong><br> Nhấp vào "Quên mật khẩu?" trên trang đăng nhập và làm theo hướng dẫn để khôi phục mật khẩu của bạn.</li>
+            <li><strong>3. Tôi có thể xóa tài khoản của mình không?</strong><br> Có, bạn có thể xóa tài khoản trong phần cài đặt tài khoản của mình.</li>
+        </ul>
+
+        <h2>Liên Hệ Với Chúng Tôi</h2>
+        <p>Nếu bạn cần hỗ trợ thêm, hãy liên hệ với chúng tôi qua email: <a href="mailto:hoanganhtu147@gmail.com">hoanganhtu147@gmail.com</a>.</p>
+
+        <h2>Gửi Yêu Cầu Hỗ Trợ</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Họ Tên</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Nội Dung Yêu Cầu</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gửi Yêu Cầu</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Bản quyền thuộc về hoanganhtu147@gmail.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

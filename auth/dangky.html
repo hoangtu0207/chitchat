@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đăng Ký</title>
+    <link rel="shortcut icon" href="/img/favicons.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #a8e1ff, #c0e6ff);
+        }
+
+        .register-container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            display: flex;
+            width: 600px;
+            height: 400px;
+            padding: 30px;
+        }
+
+        .register-logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .register-form {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        .register-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+            margin-right: 40px;
+        }
+
+        .form-input {
+            width: 70%;
+            padding: 10px 8px;
+            margin-bottom: 14px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            outline: none;
+            font-size: 16px;
+            background: transparent;
+            transition: border-color 0.3s ease;
+            margin-left: 20px;
+        }
+        .form-input:focus {
+            border-bottom: 2px solid #007bff;
+        }
+        .form-button {
+            width: 70%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            background: #0056b3;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 30px;
+        }
+
+        .form-button:hover {
+            background: #004494;
+        }
+
+        .form-link {
+            margin-top: 14px;
+            font-size: 14px;
+            text-align: center;
+            color: #007bff;
+            margin-right: 50px;
+        }
+
+        .form-link a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .form-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-logo">
+            <img src="/img/logo.png" alt="Logo" />
+        </div>
+        <div class="register-form">
+            <h2 class="register-title">Đăng Ký</h2>
+            <form action="dangnhap.html" method="GET">
+                <input type="text" class="form-input" placeholder="Tên đăng nhập" required />
+                <input type="email" class="form-input" placeholder="Email" required />
+                <input type="password" class="form-input" placeholder="Mật khẩu" required />
+                <input type="password" class="form-input" placeholder="Xác nhận mật khẩu" required />
+                <button type="submit" class="form-button">Đăng Ký</button>
+            </form>
+            <p class="form-link">
+                <a href="dangnhap.html">Đã có tài khoản? Đăng nhập</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

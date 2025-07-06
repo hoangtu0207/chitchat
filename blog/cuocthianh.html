@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuộc Thi Ảnh Chào Mừng Tết Nguyên Đán</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicons.ico" type="image/x-icon">
+   
+    <style>
+        body {
+            background: linear-gradient(to right, #FFD700, #FF4500);
+        }
+        header {
+            background-color: #D32F2F;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            margin-right: 15px;
+        }
+        .logo img {
+            height: 60px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        .support-item,
+        .trangchu {
+            font-size: 18px;
+            margin-right: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        .support-item:hover,
+        .trangchu:hover {
+            color: #FFD700;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 5px;
+            background-color: #fff;
+            width: 300px;
+        }
+        .search-bar {
+            flex: 1;
+            border: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .search-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            color: #aaa;
+            border-radius: 50%;
+        }
+        .search-button:hover {
+            color: #333;
+        }
+        .auth-links {
+            display: flex;
+            align-items: center;
+        }
+        .auth-links a {
+            font-size: 18px;
+            color: black;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .auth-links a:hover {
+            color: #FFD700;
+        }
+        .section {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #D32F2F;
+        }
+        .btn-register {
+            font-size: 1.2em;
+            padding: 10px 100px;
+            border-radius: 30px;
+        }
+        .btn-register:hover {
+            background-color: #B71C1C;
+        }
+        footer {
+            background-color: #FFD700;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+        .decoration {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .decoration img {
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <a href="/index.html" class="trangchu">Trang Chủ</a>
+                <a href="/blog/timhieu.html" class="support-item">Tìm hiểu</a>
+                <a href="/blog/hotro.html" class="support-item">Hỗ trợ</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Tìm kiếm...">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="auth-links">
+            <a href="/auth/dangnhap.html">Đăng Nhập/Đăng Ký</a>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="content">
+            <div class="section">
+                <h2>Giới Thiệu Cuộc Thi</h2>
+                <p>Cuộc thi ảnh chào mừng Tết Nguyên Đán là dịp để bạn thể hiện tình yêu và sự sáng tạo qua những bức ảnh đẹp nhất về ngày Tết. Hãy tham gia và ghi lại những khoảnh khắc đáng nhớ!</p>
+            </div>
+
+            <div class="section">
+                <h2>Thông Tin Cuộc Thi</h2>
+                <p>Thời gian diễn ra: Từ ngày 1 tháng 1 đến ngày 10 tháng 1.</p>
+                <p>Đối tượng tham gia: Tất cả mọi người.</p>
+            </div>
+
+            <div class="section">
+                <h2>Cách Tham Gia</h2>
+                <ul>
+                    <li>Gửi bức ảnh của bạn qua email hoặc trang web cuộc thi.</li>
+                    <li>Chia sẻ bức ảnh trên mạng xã hội với hashtag #ChaoMungTet.</li>
+                    <li>Chờ đợi kết quả và tham gia các hoạt động thú vị khác!</li>
+                </ul>
+            </div>
+
+            <div class="decoration">
+                <h2>Trang Trí Tết</h2>
+                <img src="/img/banhchung.png" alt="Bánh Chưng">
+                <img src="/img/hoamai.png" alt="Hoa Mai">
+                <img src="/img/hoadao.png" alt="Hoa Đào">
+                <img src="/img/denlong.png" alt="Đèn Lồng">
+            </div>
+
+            <div class="section text-center">
+                <h2>Đăng Ký Ngay!</h2>
+                <p>Đừng bỏ lỡ cơ hội này! Nhấn nút bên dưới để đăng ký tham gia cuộc thi.</p>
+                <a href="/auth/dangnhap.html" class="btn btn-success btn-register">Đăng Ký</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Bản quyền thuộc về hoanganhtu147@gmail.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hội Thảo về Kỹ Năng Giao Tiếp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicons.ico" type="image/x-icon">
+    <style>
+        body {
+            background: linear-gradient(to right, #9489FF, #ABD5F0, #CDFDC8);
+        }
+        header {
+            background-color: #9489FF;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            margin-right: 15px;
+        }
+        .logo img {
+            height: 60px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+        .support-item,
+        .trangchu {
+            font-size: 18px;
+            margin-right: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        .support-item:hover,
+        .trangchu:hover {
+            color: #ddd;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 5px;
+            background-color: #fff;
+            width: 300px;
+        }
+        .search-bar {
+            flex: 1;
+            border: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .search-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            color: #aaa;
+            border-radius: 50%;
+        }
+        .search-button:hover {
+            color: #333;
+        }
+        .auth-links {
+            display: flex;
+            align-items: center;
+        }
+        .auth-links a {
+            font-size: 18px;
+            color: black;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .auth-links a:hover {
+            color: #ddd;
+        }
+        .section {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #007bff;
+        }
+        .btn-register {
+            font-size: 1.2em;
+            padding: 10px 100px;
+            border-radius: 30px;
+        }
+        .btn-register:hover {
+            background-color: #007bff;
+        }
+        footer {
+            background-color: #CDFDC8;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <a href="/index.html" class="trangchu">Trang Chủ</a>
+                <a href="/blog/timhieu.html" class="support-item">Tìm hiểu</a>
+                <a href="/blog/hotro.html" class="support-item">Hỗ trợ</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Tìm kiếm...">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="auth-links">
+            <a href="/auth/dangnhap.html">Đăng Nhập/Đăng Ký</a>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="content">
+            <div class="section">
+                <h2>Mô Tả Hội Thảo</h2>
+                <p>Hội thảo này nhằm giúp các bạn phát triển kỹ năng giao tiếp hiệu quả trong cuộc sống hàng ngày và trong môi trường làm việc. Tham gia để học hỏi từ các chuyên gia và kết nối với những người cùng đam mê!</p>
+            </div>
+
+            <div class="section">
+                <h2>Thông Tin Diễn Giả</h2>
+                <p><strong>Hoàng Anh Tú</strong> - Chuyên gia về giao tiếp và phát triển bản thân với hơn 10 năm kinh nghiệm trong lĩnh vực đào tạo và tư vấn.</p>
+                <p><strong>Phan Trí Việt Hoàng</strong> - Nhà tâm lý học, chuyên gia trong việc nghiên cứu hành vi con người và giao tiếp hiệu quả.</p>
+            </div>
+
+            <div class="section">
+                <h2>Lịch Trình Hội Thảo</h2>
+                <ul>
+                    <li><strong>09:00 - 09:30</strong>: Đăng ký và đón tiếp</li>
+                    <li><strong>09:30 - 10:30</strong>: Phần 1 - Kỹ Năng Lắng Nghe</li>
+                    <li><strong>10:30 - 11:30</strong>: Phần 2 - Kỹ Năng Nói Trước Đám Đông</li>
+                    <li><strong>11:30 - 12:00</strong>: Giải lao</li>
+                    <li><strong>12:00 - 13:00</strong>: Phần 3 - Kỹ Năng Thuyết Phục</li>
+                </ul>
+            </div>
+
+            <div class="section text-center">
+                <h2>Đăng Ký Ngay!</h2>
+                <p>Đừng bỏ lỡ cơ hội này! Nhấn nút bên dưới để đăng ký tham gia hội thảo.</p>
+                <a href="/auth/dangnhap.html" class="btn btn-success btn-register">Đăng Ký</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Bản quyền thuộc về hoanganhtu147@gmail.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
